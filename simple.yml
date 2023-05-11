@@ -1,0 +1,11 @@
+# YAML script for a simple pipeline in Azure DevOps
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    echo "Hello, World!"
+  displayName: 'Run a script'
